@@ -13,7 +13,7 @@ public class MyProgram
     }
     
     
-     // Method 2: Greet a user with a personalized message
+     // Method 2: Greet a user
      
     public static String greetUser(String name) {
         return "Hello, " + name + "! Welcome to our program.";
