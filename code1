@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class MyProgram
+{
+   public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter your name:");
+        String userName = input.nextLine();
+        String greeting = greetUser(userName);
+        System.out.println(greeting);
+    }
+    
+    
+     // Method 2: Greet a user with a personalized message
+     
+    public static String greetUser(String name) {
+        return "Hello, " + name + "! Welcome to our program.";
+    }
+    
+    //Method 3
+    public static void greetUser1(String name){
+        Scanner inputt = new Scanner(System.in);
+        
+        System.out.println("Nice to meet you! Whats your name?");
+        String yourName = inputt.nextLine();
+        System.out.println("Sorry could you repeat that?");
+        String yourNameAgain = inputt.nextLine();
+        System.out.println("Wow, pretty name!");
+        
+    }
+}
