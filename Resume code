@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: #0f172a;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #2563eb;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0f172a;
+            color: white;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>High School Student | AP Computer Science A | Aspiring Software Developer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="card">
+            <p>
+                I am a motivated high school student with a strong interest in computer
+                science, software development, and technology. Through AP Computer Science A,
+                I have developed a solid foundation in object-oriented programming using Java,
+                algorithm design, problem-solving, and software development principles.
+            </p>
+
+            <br>
+
+            <p>
+                I successfully completed the AP Computer Science A curriculum and sat for
+                the AP Computer Science A Exam. I am actively expanding my technical skills
+                through personal programming projects and continuous learning.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>Your High School</h3>
+            <p><strong>Expected Graduation:</strong> 20XX</p>
+
+            <br>
+
+            <p><strong>Relevant Coursework:</strong></p>
+            <ul>
+                <li>AP Computer Science A</li>
+                <li>AP Calculus (if applicable)</li>
+                <li>Honors Mathematics</li>
+                <li>STEM Electives</li>
+            </ul>
+
+            <br>
+
+            <p>
+                AP Computer Science A focused on Java programming, object-oriented design,
+                inheritance, polymorphism, data structures, algorithms, and computational
+                problem solving.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="card">
+            <div class="skills">
+                <span class="skill">Java</span>
+                <span class="skill">Object-Oriented Programming</span>
+                <span class="skill">Algorithms</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Git</span>
+                <span class="skill">GitHub</span>
+                <span class="skill">Debugging</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card project">
+            <h3>Java Student Grade Manager</h3>
+            <p>
+                Developed a Java application that stores and manages student grades using
+                classes, arrays, methods, and object-oriented programming principles.
+            </p>
+        </div>
+
+        <div class="card project">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Designed and developed a responsive portfolio website using HTML and CSS
+                to showcase technical skills, academic achievements, and projects.
+            </p>
+        </div>
+
+        <div class="card project">
+            <h3>AP Computer Science Practice Programs</h3>
+            <p>
+                Created multiple Java programs demonstrating inheritance, interfaces,
+                loops, recursion, arrays, and algorithmic problem solving.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="card">
+            <p>Email: your.email@example.com</p>
+
+            <br>
+
+            <div class="contact-links">
+                <a href="https://github.com/yourusername" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Your Name | Student Portfolio</p>
+</footer>
+
+</body>
+</html>
