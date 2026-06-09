@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Database</title>
+</head>
+<body>
+
+    <h1>Name Database</h1>
+
+    <input type="text" id="nameInput" placeholder="Enter name">
+
+    <button onclick="addName()">Add Name</button>
+
+    <button onclick="printNames()">Print All</button>
+
+    <hr>
+
+    <div id="output"></div>
+
+    <script>
+        async function addName() {
+            const name = document.getElementById("nameInput").value;
+
+            if (!name) {
+                alert("Enter a name first.");
+                return;
+            }
+
+            const response = await fetch("/add-name", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ name })
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert("Name added!");
+                document.getElementById("nameInput").value = "";
+            }
+        }
+
+        async function printNames() {
+            const response = await fetch("/names");
+            const names = await response.json();
+
+            let html = "<h3>Stored Names</h3><ul>";
+
+            names.forEach(person => {
+                html += `<li>${person.name}</li>`;
+            });
+
+            html += "</ul>";
+
+            document.getElementById("output").innerHTML = html;
+        }
+    </script>
+
+</body>
+</html>
